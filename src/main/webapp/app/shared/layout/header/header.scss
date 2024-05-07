@@ -1,4 +1,4 @@
-$header-color: #fff;
+$header-color: #ff0000;
 $header-color-secondary: #bbb;
 $header-color-hover: darken($header-color, 20%);
 
@@ -78,8 +78,12 @@ Navbar styles
 
 .loading-bar {
   height: 3px;
-  background-color: #009cd8;
+  background-color: #020202;
   position: absolute;
   top: 0px;
   z-index: 1031;
+}
+
+.navbar-color {
+  background-color: #020202;
 }

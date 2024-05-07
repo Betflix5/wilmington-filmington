@@ -33,6 +33,7 @@ const AppRoutes = () => {
         <Route index element={<Home />} />
         <Route path="login" element={<Login />} />
         <Route path="logout" element={<Logout />} />
+        {/* <Route path="wilmHome" element={<wilmHome />} /> */}
         <Route path="account">
           <Route
             path="*"

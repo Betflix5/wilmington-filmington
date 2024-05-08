@@ -40,10 +40,10 @@ const Header = (props: IHeaderProps) => {
         <Collapse isOpen={menuOpen} navbar>
           <Nav id="header-tabs" className="ms-auto" navbar>
             <Home />
-            <Link to="/blank-page" className="nav-link">
+            <Link to="/Dashboard" className="nav-link">
               <button className="button-design">Movies</button>
             </Link>
-            {props.isAuthenticated && <EntitiesMenu />}
+            {props.isAuthenticated && props.isAdmin && <EntitiesMenu />}
             {props.isAuthenticated && props.isAdmin && (
               <AdminMenu showOpenAPI={props.isOpenAPIEnabled} showDatabase={!props.isInProduction} />
             )}

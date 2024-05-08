@@ -60,15 +60,16 @@ Navbar styles
     height: 35px;
     width: auto;
     display: inline-block;
+    margin-left: 8rem;
     img {
-      width: 45px;
+      width: 150px;
     }
   }
 }
 
 .brand-title {
-  font-size: 1.25rem;
-  margin-left: 0.25rem;
+  font-size: 2rem;
+  margin-left: 10rem;
   color: $header-color;
   &:hover {
     color: $header-color-hover;
@@ -85,5 +86,21 @@ Navbar styles
 }
 
 .navbar-color {
-  background-color: #020202;
+  background-image: linear-gradient(to right, rgb(0, 0, 0), rgb(103, 35, 35), rgb(103, 35, 35), rgb(103, 35, 35), rgba(0, 0, 0));
+}
+
+.button-design {
+  font-size: 15px;
+  background-color: #ffffff;
+  border: solid 0.08em #000000;
+  color: rgb(255, 0, 0);
+  border-radius: 10px;
+}
+
+.button-design:hover {
+  font-size: 15px;
+  background-color: #000000;
+  border: solid 0.08em #ffffff;
+  color: rgb(255, 0, 0);
+  border-radius: 10px;
 }

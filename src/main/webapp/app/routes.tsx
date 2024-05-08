@@ -14,6 +14,7 @@ import PrivateRoute from 'app/shared/auth/private-route';
 import ErrorBoundaryRoutes from 'app/shared/error/error-boundary-routes';
 import PageNotFound from 'app/shared/error/page-not-found';
 import { AUTHORITIES } from 'app/config/constants';
+import Dashboard from 'app/modules/dashboard/dashboard';
 
 const loading = <div>loading ...</div>;
 
@@ -33,6 +34,7 @@ const AppRoutes = () => {
         <Route index element={<Home />} />
         <Route path="login" element={<Login />} />
         <Route path="logout" element={<Logout />} />
+        <Route path="dashboard" element={<Dashboard />} />
         {/* <Route path="wilmHome" element={<wilmHome />} /> */}
         <Route path="account">
           <Route

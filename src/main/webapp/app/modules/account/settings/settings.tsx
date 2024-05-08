@@ -36,7 +36,7 @@ export const SettingsPage = () => {
   };
 
   return (
-    <div>
+    <div className="modal-content">
       <Row className="justify-content-center">
         <Col md="8">
           <h2 id="settings-title">

@@ -20,12 +20,12 @@ export interface IHeaderProps {
 const Header = (props: IHeaderProps) => {
   const [menuOpen, setMenuOpen] = useState(false);
 
-  const renderDevRibbon = () =>
-    props.isInProduction === false ? (
-      <div className="ribbon dev">
-        <a href="">Development</a>
-      </div>
-    ) : null;
+  // const renderDevRibbon = () =>
+  //   props.isInProduction === false ? (
+  //     <div className="ribbon dev">
+  //       <a href="">Development</a>
+  //     </div>
+  //   ) : null;
 
   const toggleMenu = () => setMenuOpen(!menuOpen);
 
@@ -33,17 +33,16 @@ const Header = (props: IHeaderProps) => {
 
   return (
     <div id="app-header">
-      {renderDevRibbon()}
       <LoadingBar className="loading-bar" />
       <Navbar data-cy="navbar" dark expand="md" fixed="top" className="navbar-color">
         <NavbarToggler aria-label="Menu" onClick={toggleMenu} />
         <Brand />
         <Collapse isOpen={menuOpen} navbar>
           <Nav id="header-tabs" className="ms-auto" navbar>
-            <Link to="/blank-page" className="nav-link">
-              <button className="d-flex align-items-center">Movies</button>
-            </Link>
             <Home />
+            <Link to="/blank-page" className="nav-link">
+              <button className="button-design">Movies</button>
+            </Link>
             {props.isAuthenticated && <EntitiesMenu />}
             {props.isAuthenticated && props.isAdmin && (
               <AdminMenu showOpenAPI={props.isOpenAPIEnabled} showDatabase={!props.isInProduction} />

@@ -15,7 +15,7 @@ export const Home = () => {
       <div className="hip">
         {account?.login ? (
           <div>
-            <Alert color="success">You are logged in as user &quot;{account.login}&quot;.</Alert>
+            <Alert color="blue">You are logged in as user &quot;{account.login}&quot;.</Alert>
           </div>
         ) : (
           <div></div>

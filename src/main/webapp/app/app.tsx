@@ -6,6 +6,7 @@ import React, { useEffect } from 'react';
 import { Card } from 'reactstrap';
 import { BrowserRouter } from 'react-router-dom';
 import { ToastContainer, toast } from 'react-toastify';
+import dashboard from 'app/modules/dashboard/dashboard';
 
 import { useAppDispatch, useAppSelector } from 'app/config/store';
 import { getSession } from 'app/shared/reducers/authentication';
@@ -37,7 +38,7 @@ export const App = () => {
   return (
     <BrowserRouter basename={baseHref}>
       <div className="app-container" style={{ paddingTop }}>
-        <ToastContainer position="top-left" className="toastify-container" toastClassName="toastify-toast" />
+        {/* <ToastContainer position="top-left" className="toastify-container" toastClassName="toastify-toast" /> */}
         <ErrorBoundary>
           <Header
             isAuthenticated={isAuthenticated}

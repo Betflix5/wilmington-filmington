@@ -1,16 +1,19 @@
 .footer {
   display: flex;
+  position: relative;
   flex-direction: column;
   align-items: center;
   background-color: #000000;
   color: white;
   text-align: center;
   z-index: 1000;
+  width: 100%;
+  padding: 0; /* Add this */
+  margin: 0;
 }
 
 .link-group {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
   gap: 20px;
 }
 

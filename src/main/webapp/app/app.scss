@@ -24,42 +24,41 @@ a {
   }
 }
 
-.app-container {
-  box-sizing: border-box;
-  position: relative;
-  height: 100%;
-  .view-container {
-    top: -30px;
-    width: 100%;
-    height: calc(100% - 40px);
-    overflow: hidden;
-    overflow-x: hidden;
-    padding: 1rem;
-    margin-top: -4.2%;
-    .card {
-      padding: 4rem;
-      background-color: #000;
-      border: solid #000000 1px;
-    }
-    .view-routes {
-      height: 100vh;
-      > div {
-        height: 100vh;
-        overflow: hidden;
-        position: relative; /* Change position to relative */
-        width: 100%; /* Set width to 100% */
-        display: flex; /* Use flexbox for easier centering */
-        justify-content: center; /* Center horizontally */
-        align-items: center; /* Center vertically */
-        background-position: center; /* Center the background image */
-        background-repeat: no-repeat;
-        background-size: contain; /* Fit the image within the container */
-        border-radius: 40px;
-        animation: change forwards 90s infinite ease-in-out;
-      }
-    }
-  }
+// .app-container {
+//   box-sizing: border-box;
+//   position: relative;
+//   height: 100%;
+//   .view-container {
+//     top: -30px;
+//     width: 100%;
+//     height: calc(100% - 40px);
+//     overflow: hidden;
+//     overflow-x: hidden;
+//     padding: 1rem;
+//     margin-top: -4.2%;
+.card {
+  background-color: rgb(0, 0, 0);
+  border: solid #000000 1px;
 }
+//     .view-routes {
+//       height: 100vh;
+//       > div {
+//         height: 100vh;
+//         overflow: hidden;
+//         position: relative; /* Change position to relative */
+//         width: 100%; /* Set width to 100% */
+//         display: flex; /* Use flexbox for easier centering */
+//         justify-content: center; /* Center horizontally */
+//         align-items: center; /* Center vertically */
+//         background-position: center; /* Center the background image */
+//         background-repeat: no-repeat;
+//         background-size: contain; /* Fit the image within the container */
+//         border-radius: 40px;
+//         animation: change forwards 90s infinite ease-in-out;
+//       }
+//     }
+//   }
+// }
 
 @keyframes change {
   0% {

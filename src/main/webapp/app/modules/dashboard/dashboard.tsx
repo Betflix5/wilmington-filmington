@@ -60,7 +60,7 @@ const Dashboard: React.FC = () => {
         img: `https://image.tmdb.org/t/p/original${response.data.poster_path}`,
         title: response.data.title,
         desc: response.data.overview,
-        id: id,
+        id,
         trailerUrl: response.data.videos.results.find((v: any) => v.site === 'YouTube' && v.type === 'Trailer')?.key,
       };
       setMainMovie(movieData);

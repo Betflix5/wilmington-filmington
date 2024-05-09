@@ -53,7 +53,7 @@ export const App = () => {
           <AppRoutes />
         </ErrorBoundary>
       </Card>
-      <Footer />
+      <Footer isAuthenticated={isAuthenticated} />
       {/* </div> */}
     </BrowserRouter>
   );

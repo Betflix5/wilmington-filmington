@@ -4,7 +4,7 @@
   width: 400px;
   background-image: linear-gradient(
     to right,
-    rgba(103, 35, 35, 0.789),
+    #672323c9,
     rgba(0, 0, 0, 0.75),
     rgba(0, 0, 0, 0.75),
     rgba(0, 0, 0, 0.75),
@@ -27,18 +27,18 @@
 }
 
 .hipster {
-  margin-top: 3%;
-  margin-left: -1%;
+  margin-left: -20px;
   overflow: hidden;
   position: relative;
   width: 100vw;
   height: 100vh;
   display: block;
-  background-position: top;
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   justify-content: center;
-  animation: change forwards 98s infinite ease-in-out;
+  // animation: change forwards 98s infinite ease-in-out;
+  background-image: url('/content/images/BackgroundEx.avif');
 }
 
 .hip {
@@ -51,7 +51,8 @@
   background-repeat: no-repeat;
   background-size: cover;
   justify-content: center;
-  animation: change forwards 100s infinite ease-in-out;
+  // animation: change forwards 100s infinite ease-in-out;
+  background-image: url('/content/images/BackgroundEx.avif');
 }
 
 @keyframes change {

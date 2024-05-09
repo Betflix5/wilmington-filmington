@@ -52,6 +52,10 @@ Navbar styles
   padding: 0 0 0 10px;
 }
 
+/* =============================
+        WilFilm Title
+================================ */
+
 .brand-logo {
   &:hover {
     text-decoration: none;
@@ -62,7 +66,7 @@ Navbar styles
     display: inline-block;
     margin-left: 8rem;
     img {
-      width: 150px;
+      width: 170px;
     }
   }
 }
@@ -78,7 +82,7 @@ Navbar styles
 }
 
 .loading-bar {
-  height: 3px;
+  height: 5px;
   background-color: #020202;
   position: absolute;
   top: 0px;
@@ -86,19 +90,44 @@ Navbar styles
 }
 
 .navbar-color {
-  background-image: linear-gradient(to right, rgb(0, 0, 0), rgb(103, 35, 35), rgb(103, 35, 35), rgb(103, 35, 35), rgba(0, 0, 0));
+  background-image: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0.85),
+    rgb(103, 35, 35, 0.85),
+    rgb(103, 35, 35, 0.85),
+    rgb(103, 35, 35, 0.85),
+    rgba(0, 0, 0, 0.85)
+  );
+  z-index: 1000;
 }
 
+/* ==========================================================================
+Button styles
+========================================================================== */
+
 .button-design {
-  font-size: 15px;
+  font-size: 20px;
   background-color: #ffffff;
   border: solid 0.08em #000000;
   color: rgb(255, 0, 0);
   border-radius: 10px;
+  padding: 5px;
 }
 
 .button-design:hover {
-  font-size: 15px;
+  background-color: #000000;
+  border: solid 0.08em #ffffff;
+  color: rgb(255, 0, 0);
+  border-radius: 10px;
+}
+
+.home-title {
+  color: white;
+  font-size: 20px;
+  padding: 5px;
+}
+
+.home-title:hover {
   background-color: #000000;
   border: solid 0.08em #ffffff;
   color: rgb(255, 0, 0);

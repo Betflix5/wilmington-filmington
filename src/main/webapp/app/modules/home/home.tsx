@@ -11,12 +11,10 @@ export const Home = () => {
   const account = useAppSelector(state => state.authentication.account);
 
   return (
-    <Row className="hipster">
-      <div className="hip">
+    <Row className="home-back">
+      <div className="home-backing">
         {account?.login ? (
-          <div>
-            <Alert color="blue">You are logged in as user &quot;{account.login}&quot;.</Alert>
-          </div>
+          <div>{/* <Alert color="blue">You are logged in as user &quot;{account.login}&quot;.</Alert> */}</div>
         ) : (
           <div></div>
         )}

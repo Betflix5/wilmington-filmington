@@ -40,14 +40,21 @@ const Header = (props: IHeaderProps) => {
         <Collapse isOpen={menuOpen} navbar>
           <Nav id="header-tabs" className="ms-auto" navbar>
             <Home />
-            <Link to="/Dashboard" className="nav-link">
-              <button className="button-design">Movies</button>
-            </Link>
             {props.isAuthenticated && props.isAdmin && <EntitiesMenu />}
             {props.isAuthenticated && props.isAdmin && (
               <AdminMenu showOpenAPI={props.isOpenAPIEnabled} showDatabase={!props.isInProduction} />
             )}
             <AccountMenu isAuthenticated={props.isAuthenticated} />
+            {props.isAuthenticated && (
+              <Link to="/Dashboard" className="nav-link">
+                <button className="button-design">Movies</button>
+              </Link>
+            )}
+            {props.isAuthenticated && (
+              <Link to="/Movie" className="nav-link">
+                <button className="button-design">Temp Movie</button>
+              </Link>
+            )}
           </Nav>
         </Collapse>
       </Navbar>

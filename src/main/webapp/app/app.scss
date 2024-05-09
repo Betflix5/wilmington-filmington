@@ -60,69 +60,6 @@ a {
 //   }
 // }
 
-@keyframes change {
-  0% {
-    background: url('/content/images/starwars.jpeg');
-    background-size: contain;
-    background-repeat: no-repeat;
-  }
-  10% {
-    background: url('/content/images/dune.jpeg');
-    background-size: contain;
-    background-repeat: no-repeat;
-  }
-  20% {
-    background: url('/content/images/mandalorian.jpeg');
-    background-size: contain;
-    background-repeat: no-repeat;
-  }
-  30% {
-    background: url('/content/images/deadPool.jpeg');
-    background-size: contain;
-    background-repeat: no-repeat;
-  }
-  40% {
-    background: url('/content/images/batman.jpeg');
-    background-size: contain;
-    background-repeat: no-repeat;
-  }
-  50% {
-    background: url('/content/images/itClown.jpeg');
-    background-size: contain;
-    background-repeat: no-repeat;
-  }
-  60% {
-    background: url('/content/images/barbieMovie.jpeg');
-    background-size: contain;
-    background-repeat: no-repeat;
-  }
-  70% {
-    background: url('/content/images/lionKing.jpeg');
-    background-size: contain;
-    background-repeat: no-repeat;
-  }
-  80% {
-    background: url('/content/images/scream.jpeg');
-    background-size: contain;
-    background-repeat: no-repeat;
-  }
-  90% {
-    background: url('/content/images/GodzillavsKong.avif');
-    background-size: contain;
-    background-repeat: no-repeat;
-  }
-  99% {
-    background: url('/content/images/wonka.jpeg');
-    background-size: contain;
-    background-repeat: no-repeat;
-  }
-  100% {
-    background: url('/content/images/starwars.jpeg');
-    background-size: contain;
-    background-repeat: no-repeat;
-  }
-}
-
 .fullscreen {
   position: fixed;
   top: 100px;
